@@ -1,8 +1,16 @@
 'use client';
 
-import { Terminal, Activity, Globe, Database, ArrowUpRight, Menu } from 'lucide-react';
-import Link from 'next/link';
+// 1. React ve Hook'lar (useState hatasını bu satır çözer)
+import React, { useState, useEffect } from 'react';
 
+// 2. Animasyonlar (Sitenin hareketli olması için şart)
+import { motion } from 'framer-motion';
+
+// 3. İkonlar (Globe ve Menu hatasını bu satır çözer)
+import { Terminal, Activity, Globe, Database, ArrowUpRight, Menu } from 'lucide-react';
+
+// 4. Sayfa Linkleri
+import Link from 'next/link';
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type ProductStatus = 'live' | 'development' | 'concept';
