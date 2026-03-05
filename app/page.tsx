@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { Terminal, Activity, Globe, Database, ArrowUpRight, Menu } from 'lucide-react';
 import Link from 'next/link';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -805,7 +805,6 @@ export default function HomePage() {
       <footer className="py-12 px-6 md:px-12 border-t border-white/5 bg-[#040507] flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] text-gray-600 font-mono uppercase tracking-widest">
           <span>© 2026 IE DYNAMICS — <span className="text-[#00e87a]">SYSTEMS OPERATIONAL</span></span>
-          {/* YENİ EKLENEN LİNK BURADA: */}
           <a href="/privacy.html" target="_blank" className="hover:text-white transition-colors border-b border-transparent hover:border-white/20 pb-0.5">
             Privacy Policy
           </a>
