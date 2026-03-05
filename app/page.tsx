@@ -801,18 +801,20 @@ export default function HomePage() {
       {/* ════════════════════════════════════════════
           FOOTER
       ════════════════════════════════════════════ */}
-      <footer style={{ position: 'relative', zIndex: 2, padding: '32px 48px', borderTop: '1px solid rgba(255,255,255,0.06)', background: '#040507', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', letterSpacing: '0.1em', color: '#4a5568' }}>
-          © {new Date().getFullYear()} {BRAND.name}. All rights reserved. — {BRAND.tagline}.
-        </p>
-        <StatusDot label="PitchPro v16 — Live" />
-        <nav style={{ display: 'flex', gap: '24px' }}>
-          {['#products', '#roadmap', '#contact'].map((href) => (
-            <a key={href} href={href} style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#4a5568', textDecoration: 'none' }}>
-              {href.replace('#', '')}
-            </a>
-          ))}
-        </nav>
+      {/* 6. FOOTER */}
+      <footer className="py-12 px-6 md:px-12 border-t border-white/5 bg-[#040507] flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
+        <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] text-gray-600 font-mono uppercase tracking-widest">
+          <span>© 2026 IE DYNAMICS — <span className="text-[#00e87a]">SYSTEMS OPERATIONAL</span></span>
+          {/* YENİ EKLENEN LİNK BURADA: */}
+          <a href="/privacy.html" target="_blank" className="hover:text-white transition-colors border-b border-transparent hover:border-white/20 pb-0.5">
+            Privacy Policy
+          </a>
+        </div>
+        
+        <div className="flex gap-8">
+           <a href="#" className="text-gray-600 hover:text-white transition-colors"><Globe size={16}/></a>
+           <a href="#" className="text-gray-600 hover:text-white transition-colors"><Menu size={16}/></a>
+        </div>
       </footer>
     </>
   );
