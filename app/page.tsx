@@ -802,6 +802,7 @@ export default function HomePage() {
           FOOTER
       ════════════════════════════════════════════ */}
       {/* 6. FOOTER */}
+     {/* 6. FOOTER */}
       <footer className="py-12 px-6 md:px-12 border-t border-white/5 bg-[#040507] flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] text-gray-600 font-mono uppercase tracking-widest">
           <span>© 2026 IE DYNAMICS — <span className="text-[#00e87a]">SYSTEMS OPERATIONAL</span></span>
