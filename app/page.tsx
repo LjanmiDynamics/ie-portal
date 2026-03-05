@@ -538,7 +538,7 @@ export default function HomePage() {
             © {new Date().getFullYear()} {BRAND.name}. All rights reserved. — {BRAND.tagline}.
           </p>
           <Link
-            href="/privacy"
+            href="/privacy.html"
             style={{ fontFamily:'var(--font-mono)', fontSize:'10px', letterSpacing:'0.1em', textTransform:'uppercase', color:'#4a5568', textDecoration:'none', borderBottom:'1px solid transparent', transition:'color 0.2s, border-color 0.2s' }}
             onMouseEnter={(e) => { (e.target as HTMLElement).style.color='#e8edf4'; (e.target as HTMLElement).style.borderBottomColor='rgba(255,255,255,0.2)'; }}
             onMouseLeave={(e) => { (e.target as HTMLElement).style.color='#4a5568'; (e.target as HTMLElement).style.borderBottomColor='transparent'; }}
